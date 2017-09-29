@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend Finder</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="/css/survey.css"> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+</head>
+
+<style>
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+    background-color: purple;
+  }
+  h1, h4, p {
+    font-family: "Garamond";
+    text-align: center;
+    color:white;
+  }
+  div {
+    font-family: "Garamond";
+  }
+</style>
+
+<main>
+    <div class="container white-text" style="padding: 20px; ">
+        <h1>Survey</h1>
+        <br>
+
+        <!--Name and photo inputs -->
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">person</i>
+                <input placeholder="  Full Name" id="name" type="text" class="validate white black-text" required>
+                
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">add_a_photo</i>
+                <input placeholder="  URL to your photo" id="photo" type="text" class="validate white black-text" required>
+            </div>
+        </div>
+        <br>
+
+        <!--survey questionare -->
+        <form  class="input-field row">
+            <div class="col s6">
+                <div style="font-size: 16px;"><b>1. I am shy.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option> 
+                </select>
+            </div>
+            <div class="col s6">
+                <div style="font-size: 16px;"><b>2. I tend to repeate what I know.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>3. I am always worried about things.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>4. I love to read.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>5. I hate history.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>6. I get angry easily.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>7. I feel for others intensely.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>8. I often feel sad.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>9. I keep my mind busy.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <div class="input-field col s6">
+                <div style="font-size: 16px;"><b>10. I am easily entertained.</b></div>
+                <select required>
+                    <option value="" disabled selected></option>
+                    <option value="1">1 (disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (agree)</option>
+                </select>
+            </div>
+            <br>
+            <button id="submit" type="submit" class="btn-floating btn-large grey darken-3 center-align">Find</button>
+        </form>
+
+        <!-- modal popup content here -->
+        <div id="modal-popup" class="modal">
+            <div class="modal-content" style="text-align: center; background-color: grey;">
+                <h4>Your closest match is:</h4>
+                <img id="match-photo" src="" alt="" style="max-height:300px;">
+                <h5 id="match-name">Name</h5>
+            </div>
+        </div>
+    </div>
+</main>
+ 
+<footer class="page-footer grey darken-3">
+  <div class ="footer-copyright">
+    <div class="container">
+        <p> 2017 &copy Produced by <a class="grey-text text-lighten-4" href="https://github.com/annabfaizi">Anna B Faizi</a></p>
+    </div>
+  </div>
+</footer> 
+</html>
+
+<!-- Javascript code here -->
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        //initialize the select element
+        $('select').material_select();
+        //on-click event fucntion
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
+            //complete user entry variable
+            var complete = false;
+            // get all the select values
+            var selectScores = $('select').map(function() {
+                return this.value;
+            }).get()
+
+            if ($("#name").val().length > 0 && $("#photo").val().length > 0) {
+                complete = true;
+            } else {
+                alert("Please enter name and photo url to complete the survey!");
+            }
+            selectScores.forEach(function(element, index, array) {
+                if (element.length === 0) {
+                    complete = false;
+                }
+            })
+
+            if (complete) {
+                // create new friend
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: selectScores
+                };
+                var photoValid = newFriend.photo.startsWith("http");
+                if (photoValid === false){
+                    newFriend.photo = "http://photos-ak.sparkpeople.com/2/4/b248495118.jpg";
+                    $.post("/api/friends", newFriend,
+                    function(data) {
+                        if (data) {
+                            console.log("added new friend with photo n/a");
+                        }
+                    });
+                    friendFinder();
+                } else {
+                    $.post("/api/friends", newFriend,
+                    function(data) {
+                        if (data) {
+                            console.log("added new friend");
+                        }
+                    });
+                friendFinder();
+                }
+            }
+        });
+
+        function friendFinder() {
+
+            $.get("api/friends", function(data) {
+                console.log(data);
+                var compatibleWith;
+                if (data.length === 2) {
+                    $('#match-name').val(data[0].name);
+                    $('#match-photo').attr('src', data[0].photo);
+                } else {
+                    var userScores = data[data.length - 1].scores;
+                    var closestFriend;
+                    var FriendsLength = data.length - 1;
+
+                    for (var i = 0; i < FriendsLength; i++) {
+                        //if same answers total difference equals zero
+                        var totalDiff = 0;
+                        //if one answers all 5s and other all 1s the difference is max 40
+                        var leastDiff = 40;
+                        var friend = data[i];
+                        
+                        for (var j = 0; j < friend.scores.length; j++) {
+                            //Get absolute value with Math.abs
+                            totalDiff += Math.abs(parseInt(friend.scores[j]) - parseInt(userScores[j]));
+                        }
+                        console.log("total Difference " + totalDiff);
+
+                        if (totalDiff < leastDiff) {
+                            closestFriend = friend;
+                            console.log("closest match is: " + closestFriend.name);
+                        }
+                    }
+                    compatibleWith = friend;
+                }
+                $('#match-name').text(compatibleWith.name);
+                $('#match-photo').attr('src', compatibleWith.photo);
+                $('#modal-popup').modal();
+                $('#modal-popup').modal('open');
+                //empties form
+                $('form')[0].reset();
+                $("#name").val("");
+                $("#photo").val("");
+            })
+        }
+    });
+</script>

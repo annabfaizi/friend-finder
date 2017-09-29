@@ -1,0 +1,26 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "find friends with compatible personalities",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "body-parser": "^1.17.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annabfaizi/FriendFinder.git"
+  },
+  "author": "Anna B Faizi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annabfaizi/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/annabfaizi/FriendFinder#readme"
+}
